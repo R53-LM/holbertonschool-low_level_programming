@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - 
+ * main - Utilisation de printf avec l'option %zu pour afficher le nombre de bytes + sizeof
  *
  * Return: Always 0 (Success)
  */

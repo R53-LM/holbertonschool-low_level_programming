@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
-* main - afficher 26 lettres avec seulement deux appels à putchar
+*main - afficher 26 lettres avec seulement deux appels à putchar
 *
-* Return: Always(0)
+* Return: Always (0)
 */
 int main(void)
 {

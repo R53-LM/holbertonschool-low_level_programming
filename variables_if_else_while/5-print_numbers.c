@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-* main - afficher 26 lettres en suite logique sans le e et q.
+* main - afficher 10 chiffres en suite logique.
 *
 * Return: Always (0)
 */

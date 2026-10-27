@@ -2,11 +2,11 @@
 #include <stdlib.h>
 #include <time.h>
 
-/*
+/**
 * main - Say if a random word is positive, negative or equals 0
 *
 * Return: Always (0)
-**/
+*/
 int main(void)
 {
 	int n;

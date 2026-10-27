@@ -1,21 +1,23 @@
 #include <stdio.h>
 
 /*
- * main - Utilisation de if..else avec une variable random
+ * main - Utilisation de if..elseif else avec une variable random
  *
  * Return: Always (0)
  **/
 int main(void)
 {
+	int n;
+
 	if (n>0)
 	{
 	printf("%dis positive%d\n",n++);
 	}
-	else
+	elseif (n==0)
 	{
 		printf("%dis zero%d\n",n++);
 	}
-	else
+	else (n<0)
 	{
 		printf("%dis negative%d\n",n++);
 	}

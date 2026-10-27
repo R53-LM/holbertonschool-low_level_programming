@@ -1,18 +1,23 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 /**
-* main - 
+* main - afficher 26 lettres avec seulement deux appels à putchar
 *
 * Return: Always (0)
 */
 int main(void)
 {
-	int c;
+	char c;
 
-    for ()
-	
+	c = 'a';
+
+    while(c <= 'z')
+	{
+		putchar(c++);
+	}
+	{
+		putchar('\n');
+	}
 
 	return (0);
 }

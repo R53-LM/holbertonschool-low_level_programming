@@ -1,7 +1,8 @@
 #include <stdio.h>
+#include <time.h>
 
 /*
- * main - Utilisation de if..elseif else avec une variable random
+ * main - si positif, égale ou négatif à 0
  *
  * Return: Always (0)
  **/
@@ -9,16 +10,19 @@ int main(void)
 {
 	int n;
 
-	if (n>0)
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	if (n > 0)
 	{
-	printf("%dis positive%d\n",n++);
+		printf("%d is positive\n", n);
 	}
-	elseif (n==0)
+	else if (n == 0)
 	{
-		printf("%dis zero%d\n",n++);
+		printf("%d is zero\n", n);
 	}
-	else (n<0)
+	else (n < 0)
 	{
-		printf("%dis negative%d\n",n++);
+		printf("%d is negative\n", n);
 	}
+	return (0);
 }

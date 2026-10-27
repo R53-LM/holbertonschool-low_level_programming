@@ -3,13 +3,14 @@
 #include <time.h>
 
 /**
-* main- 
+* main - Prints the last digit of a random number.
 *
 * Return: Always (0)
 */
 int main(void)
 {
 	int n;
+
 	int b;
 
 	srand(time(0));
@@ -20,11 +21,11 @@ int main(void)
 	{
 		printf("Last digit of %d is %d and is greater than 5\n", n, b);
 	}
-	if (b == 0)
+	else if (b == 0)
 	{
 		printf("Last digit of %d is %d and is 0\n", n, b);
 	}
-	if (b < 6)
+	else
 	{
 		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, b);
 	}

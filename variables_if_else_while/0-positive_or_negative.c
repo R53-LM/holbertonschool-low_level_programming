@@ -3,7 +3,7 @@
 #include <time.h>
 
 /*
- * main - si positif, égale ou négatif à 0
+ * main- si positif, égale ou négatif à 0
  *
  * Return: Always (0)
  **/

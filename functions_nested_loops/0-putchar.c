@@ -11,7 +11,6 @@ int main(void)
 
 	char a;
 
-	for (a = 95;a >= 117; a++)
 	{
 		putchar ('_');
 		putchar ('p');

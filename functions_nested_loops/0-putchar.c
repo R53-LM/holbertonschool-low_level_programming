@@ -1,4 +1,5 @@
-#include <main.h>
+#include "main.h"
+#include <stdio.h>
 
 /**
 * main- afficher _putchar
@@ -7,12 +8,21 @@
 */
 int main(void)
 {
-	
-    char a
 
-    a = "_putchar"
-    
-    putchar (a)
+	char a;
+
+	for (a = 95;a >= 117; a++)
+	{
+		putchar ('_');
+		putchar ('p');
+		putchar ('u');
+		putchar ('t');
+		putchar ('c');
+		putchar ('h');
+		putchar ('a');
+		putchar ('r');
+	}
+	putchar ('\n');
 
 return (0);
 }

@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
-* print_alphabet - Affiche l'alphabet avec un prototype différent.
+* print_alphabet - Affiche l'alphabet.
 *
 * Return: Always 0.
 */
-int print_alphabet(void)
+void print_alphabet(void)
 {
 	char a;
 

@@ -1,13 +1,18 @@
 #include <main.h>
 
 /**
-* main- afficher _putcher
+* main- afficher _putchar
 *
 * Return: Always (0)
 */
 int main(void)
 {
-	printf("_putchar\n");
+	
+    char a
+
+    a = "_putchar"
+    
+    putchar (a)
 
 return (0);
 }

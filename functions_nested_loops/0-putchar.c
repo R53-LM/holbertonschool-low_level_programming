@@ -2,15 +2,12 @@
 #include <stdio.h>
 
 /**
-* main- afficher _putchar
+* main - afficher _putchar
 *
 * Return: Always (0)
 */
 int main(void)
 {
-
-	char a;
-
 	{
 		putchar ('_');
 		putchar ('p');

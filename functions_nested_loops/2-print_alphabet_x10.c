@@ -2,8 +2,6 @@
 
 /**
 * print_alphabet_x10 - Afficher 10 fois l'alphabet.
-*
-*
 */
 void print_alphabet_x10(void)
 {
@@ -15,9 +13,9 @@ void print_alphabet_x10(void)
 	{
 		for (a = 'a'; a <= 'z'; a++)
 		{
-		    _putchar (a);
+		    _putchar(a);
 		}
-	_putchar ('\n');
+	_putchar('\n');
 	}
 
 }

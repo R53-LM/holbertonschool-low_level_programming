@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+/**
+* main - 
+*
+* Return: Always (0)
+*/
+int main(void)
+{
+
+    char a;
+
+    a = 97;
+
+    while (a <= 122)
+    {
+        if (a != 97 && 101 && 105 && 111 && 117 && 121)
+        {
+            putchar (a);
+            a++;
+        }
+    }
+        putchar('\n');
+
+    return (0);
+}

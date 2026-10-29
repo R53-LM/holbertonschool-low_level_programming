@@ -1,40 +1,27 @@
 #include "main.h"
 
 /**
-* print_sign - check the code.
+* print_sign - entry point.
+* @n: character we want to check
 *
-* Return:
+* Return: 1 it's positiv, 0 for egal end -1 is negativ
 */
 int print_sign(int n)
 {
 
-	if (n > '0')
+	if (n > 0)
 	{
 		_putchar('+');
-		_putchar(',');
-		_putchar(' ');
-
 		return (1);
-
-		_putchar('\n');
 	}
-	else if (n == '0')
+	else if (n == 0)
 	{
-		_putchars(n);
-		_putchar(',');
-		_putchar(' ');
-
+		_putchar(48);
 		return (0);
-
-		_putchar('\n');
 	}
 	else
 	{
 		_putchar('-');
-		_putchar(',');
-		_putchar(' ');
-
 		return (-1);
-
-		_putchar('\n');
 	}
+}

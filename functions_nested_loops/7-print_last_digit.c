@@ -19,5 +19,5 @@ int f;
 	f = d % 10;
 
 	_putchar('0' + f);
-	return (10);
+	return (f);
 }

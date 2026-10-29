@@ -2,7 +2,7 @@
 
 /**
 * _isalpha - entry point
-*@c: character we want to check
+* @c: character we want to check
 *
 * Return: take 1 if c is lowercase and uppercase, 0 for otherwise
 */

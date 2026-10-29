@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* print_sign - entry point.
+* _abs - entry point.
 * @n: character we want to check
 *
 * Return:negatif to positif value

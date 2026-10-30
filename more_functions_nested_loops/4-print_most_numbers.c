@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* print_numbers - affiche la les chiffres jusqu'à 9
+* print_most_numbers - affiche la les chiffres jusqu'à 9 sans 2 et 4
 *
 */
 void print_most_numbers(void)

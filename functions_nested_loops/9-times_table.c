@@ -7,4 +7,3 @@
 */
 int times_table(void)
 {
-    

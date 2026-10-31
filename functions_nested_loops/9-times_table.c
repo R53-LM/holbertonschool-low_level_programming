@@ -19,14 +19,14 @@ int b;
 			p = a * b;
 			if (p > 9)
 			{
-		        _putchar((p / 10) + '0');
-		        _putchar((p % 10) + '0');
+				_putchar((p / 10) + '0');
+				_putchar((p % 10) + '0');
 			}
 			else if (p <= 9)
 			{
 				if (b != 0)
 				{
-				    _putchar(' ');
+					_putchar(' ');
 				}
 				_putchar((p % 10) + '0');
 			}

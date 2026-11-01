@@ -11,7 +11,7 @@ char c = '_';
 
 int i = 0;
 
-	for(; i < n; i++)
+	for (; i < n; i++)
 	{
 		_putchar(c);
 	}

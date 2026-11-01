@@ -3,8 +3,10 @@
 
 /**
 * add - adds two numbers
+* @a - first numbers
+* @b - second numbers
 *
-* Return: (0)
+* Return: (result)
 */
 int add(int a, int b)
 {

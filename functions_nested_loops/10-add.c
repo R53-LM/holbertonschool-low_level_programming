@@ -3,8 +3,8 @@
 
 /**
 * add - adds two numbers
-* @a - first numbers
-* @b - second numbers
+* @a: first numbers
+* @b: second numbers
 *
 * Return: (result)
 */

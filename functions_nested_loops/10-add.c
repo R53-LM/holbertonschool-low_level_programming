@@ -1,9 +1,12 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
-* add - 
-* 
-* Return:
+* add - adds two numbers
+*
+* Return: (0)
 */
-int add(int, int)
+int add(int a, int b)
 {
+	return (a + b);
+}

@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
-* print_square -
-*@size:
+* print_square - draws a square with #
+*@size:is the number of times the character # should be printed
 *
 */
 void print_square(int size)

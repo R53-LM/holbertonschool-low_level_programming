@@ -10,15 +10,8 @@
 void reset_to_98(int *n)
 {
 
-int n = 402;
-
-int *chg = &n;
-
-printf("%d\n", *chg);
+int *chg = n;
 
 *chg = 98;
 
-printf("%d\n", *chg);
-
-return (0);
 }

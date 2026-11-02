@@ -3,6 +3,8 @@
 # Measurement Methodology
 Un benchmark sert par exemple à mesurer le temps d'exécution pour comprendre et analyser l'impact du programme sur notre machine.
 Pour appliquer cette méthodologie, il faut placer à la fin de nos programmes une analyse mesurant le temps d'exécution, par exemple, ou la data développer.
+Dans les task:
+Elle doit avoir une structure ordonner pour chaque point d'entré. L'analyse doit ce faire avec des variables précis et des inizialisation bien déclarer. Puis, viens l'affichage des données et du temps d'execution .
 
 # Observed Performance Differences
 On peut observer une fine différence entre nos programmes. Selon la taille, la tâche exécutée et la génération de data, le programme peut prendre plus de temps à s'exécuter.

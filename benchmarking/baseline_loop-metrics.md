@@ -12,3 +12,4 @@ Nous utilisons "clock_t" pour calculer et afficher le temps de réponse entre le
 
     Valeur convertie en seconde et affichage
 
+Donne des valeurs très proches

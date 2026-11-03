@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-* _puts - print string 
+* _puts - print string
 *@str: string to measure
 * Return:
 */

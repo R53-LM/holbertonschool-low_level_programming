@@ -11,7 +11,7 @@ int n = 0;
 int i;
 int start;
 
-	for (; str[n] != '\0'; n++)
+	for (; str[n] != '\0'; n++);
 
 start = n - ((n + 1) / 2);
 	for (i = start; str[i] != '\0'; i++)

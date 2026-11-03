@@ -34,3 +34,49 @@ General
     In the following examples, the main.c files are shown as examples. You can use them to test your functions, but you don't have to push them to your repo (if you do we won't take them into account). We will use our own main.c files at compilation. Our main.c files might be different from the one shown in the examples
     The prototypes of all your functions and the prototype of the function _putchar should be included in your header file called main.h
     Don't forget to push your header file
+
+
+    # rev_string
+
+Projet C du dossier `pointers_arrays_strings` (repo `holbertonschool-low_level_programming`).
+
+## Description
+
+La fonction `rev_string` inverse une chaîne de caractères **sur place** :
+elle modifie directement le tableau reçu, sans rien afficher et sans rien renvoyer.
+
+## Prototype
+
+    void rev_string(char *s);
+
+- `s` : pointeur vers la chaîne à inverser (terminée par `\0`).
+
+## Fonctionnement
+
+1. Une boucle `while` parcourt la chaîne pour trouver l'indice du dernier caractère.
+2. Deux indices, `debut` (au début) et `fin` (à la fin), se rapprochent l'un de l'autre.
+3. À chaque tour, `s[debut]` et `s[fin]` sont échangés grâce à une variable temporaire.
+4. La boucle s'arrête quand `debut >= fin`.
+
+Comme la fonction reçoit un pointeur, la modification est visible dans la fonction appelante.
+
+## Exemple
+
+    My School
+    loohcS yM
+
+## Compilation
+
+    gcc -Wall -Werror -Wextra -pedantic -std=gnu89 main.c rev_string.c -o rev_string
+
+## Fichiers
+
+- `main.h` : prototypes des fonctions
+- `rev_string.c` : la fonction
+- `main.c` : programme de test
+
+## Ce que j'ai appris
+
+- Un pointeur permet de modifier le tableau d'origine.
+- Les indices commencent à 0 : le dernier caractère est à `longueur - 1`.
+- Pour échanger deux valeurs, il faut une variable temporaire.

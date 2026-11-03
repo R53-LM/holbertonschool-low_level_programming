@@ -3,18 +3,17 @@
 
 /**
 * _strlen - calculates the number of characters in a string
-* @s: is a pointers for make a string
-*
+*@s: string to measure
+* Return: the number of characters in the string
 */
 int _strlen(char *s)
 {
+	int c = 0;
 
-int tp;
-
-	while (tp != *s)
+	while (s[c] != '\0')
 	{
-		tp++;
+		c++;
 	}
 
-return (tp);
+	return (c);
 }

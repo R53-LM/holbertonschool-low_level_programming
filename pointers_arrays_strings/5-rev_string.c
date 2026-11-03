@@ -3,7 +3,7 @@
 
 /**
 * rev_string - create, send, then return and resend the values
-*@s: Select a channel and start at 10
+*@s: 
 *
 */
 void rev_string(char *s)
@@ -25,9 +25,9 @@ char r;
 	for (; debut < fin;)
 	{
 		r = s[debut];
-		s[debut] = s[c];
-		s[c] = r;
-		c--;
+		s[debut] = s[fin];
+		s[fin] = r;
+		fin--;
 		debut++;
 	}
 }

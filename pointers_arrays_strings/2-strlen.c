@@ -9,7 +9,12 @@
 int _strlen(char *s)
 {
 
-site_t longueur = _strlen(s);
+int tp;
 
+	while (tp != *s)
+	{
+		tp++;
+	}
 
+return (tp);
 }

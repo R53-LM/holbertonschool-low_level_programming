@@ -3,7 +3,7 @@
 
 /**
 * rev_string - create, send, then return and resend the values
-*@s: 
+*@s: pointer to the string to reverse
 *
 */
 void rev_string(char *s)

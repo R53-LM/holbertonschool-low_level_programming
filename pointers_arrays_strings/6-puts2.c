@@ -11,9 +11,9 @@ void puts2(char *str)
 
 int i = 0;
 
-	for (; str[i] != '\0'; i += 2)
+	for (; str[i] != '\0'; i++)
 	{
-		if (str[i] != 2)
+		if (i % 2 != 1)
 		{
 		    _putchar(str[i]);
 		}

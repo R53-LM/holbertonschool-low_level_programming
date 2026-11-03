@@ -15,7 +15,7 @@ int i = 0;
 	{
 		if (i % 2 != 1)
 		{
-		    _putchar(str[i]);
+			_putchar(str[i]);
 		}
 	}
 	_putchar('\n');

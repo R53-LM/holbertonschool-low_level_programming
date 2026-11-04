@@ -1,42 +1,174 @@
-C - Pointers, arrays and strings
+# C - Pointers, arrays and strings
 
-Resources
-Read or watch:
+Projet de la formation **Holberton School** (cursus développement web et web mobile) autour des **pointeurs**, des **tableaux** et des **chaînes de caractères** en langage C.
 
-    C - Arrays
-    C - Pointers
-    C - Strings
-    Memory Layout
+- **Dépôt GitHub** : `holbertonschool-low_level_programming`
+- **Dossier** : `pointers_arrays_strings`
 
-Learning Objectives
-    At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
+---
 
-General
-    What are pointers and how to use them
-    What are arrays and how to use them
-    What are the differences between pointers and arrays
-    How to use strings and how to manipulate them
-    Scope of variables
+## Table des matières
+
+1. [Objectifs d'apprentissage](#objectifs-dapprentissage)
+2. [Notions clés](#notions-clés)
+3. [Contraintes du projet](#contraintes-du-projet)
+4. [Compilation](#compilation)
+5. [Liste des fichiers](#liste-des-fichiers)
+6. [Exemple de test](#exemple-de-test)
+7. [Ressources](#ressources)
+
+---
+
+## Objectifs d'apprentissage
+
+À la fin du projet, on doit savoir expliquer, sans aide extérieure :
+
+| Notion | Ce qu'il faut savoir |
+|---|---|
+| Pointeurs | Ce que c'est et comment les utiliser |
+| Tableaux | Ce que c'est et comment les utiliser |
+| Pointeurs vs tableaux | Les différences entre les deux |
+| Chaînes | Comment les utiliser et les manipuler |
+| Portée des variables | Où une variable est visible et combien de temps elle existe |
+
+---
+
+## Notions clés
+
+### Pointeurs
+
+| Syntaxe | Signification |
+|---|---|
+| `int *p;` | `p` est un pointeur vers un `int` |
+| `&x` | adresse de la variable `x` |
+| `*p` | valeur située à l'adresse contenue dans `p` |
+| `p + 1` | adresse de l'élément suivant (avance de la taille du type pointé) |
+
+Les arguments d'une fonction sont passés **par copie** : pour qu'une fonction modifie une variable de l'appelant, il faut lui transmettre son **adresse**.
+
+### Tableaux
+
+- Cases du **même type**, **contiguës** en mémoire.
+- L'indice **commence à 0**.
+- Sortir des limites provoque un comportement indéfini.
+- Passé à une fonction, un tableau « se dégrade » en pointeur vers son premier élément : sa taille doit être transmise séparément.
+
+### Chaînes de caractères
+
+- Une chaîne est un **tableau de `char`** terminé par `'\0'`.
+- Longueur = nombre de caractères **avant** le `'\0'` ; taille mémoire = longueur + 1.
+
+| Déclaration | Modifiable ? |
+|---|---|
+| `char s[] = "abc";` | Oui (copie sur la pile) |
+| `char *s = "abc";` | Non (zone en lecture seule) |
+
+### Portée des variables
+
+| Type | Visible | Durée de vie |
+|---|---|---|
+| Locale | Dans son bloc | Jusqu'à la fin du bloc |
+| Paramètre | Dans la fonction | Jusqu'à la fin de l'appel |
+| Globale (interdite ici) | Dans tout le fichier | Tout le programme |
+
+---
+
+## Contraintes du projet
+
+| Règle | Détail |
+|---|---|
+| Éditeurs autorisés | `vi`, `vim`, `emacs` |
+| Environnement | Ubuntu 20.04 LTS |
+| Compilateur | `gcc` avec `-Wall -Werror -Wextra -pedantic -std=gnu89` |
+| Fin de fichier | Chaque fichier se termine par un retour à la ligne |
+| Style | Betty (`betty-style.pl` et `betty-doc.pl`) |
+| Variables globales | Interdites |
+| Fonctions par fichier | 5 maximum |
+| Bibliothèque standard | Interdite (`printf`, `puts`, etc.), sauf `_putchar` |
+| Exception | `printf` autorisé pour la tâche 8 |
+| Header | Tous les prototypes (dont `_putchar`) dans `main.h`, à pousser |
+| `_putchar.c` | Fourni lors de la correction, inutile de le pousser |
+
+Hors programme pour l'instant : pointeurs de fonctions, pointeurs de pointeurs, tableaux multidimensionnels, tableaux de structures, `malloc` et `free`.
+
+---
+
+## Compilation
+
+```bash
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c <N>-main.c <N>-<nom>.c -o <N>-<nom>
+```
+
+Pour les tâches qui n'utilisent pas `_putchar`, on peut l'omettre de la commande.
+
+---
+
+## Liste des fichiers
+
+| N° | Fichier | Prototype | Description |
+|---|---|---|---|
+| 0 | `0-reset_to_98.c` | `void reset_to_98(int *n);` | Met à `98` la valeur pointée par `n` |
+| 1 | `1-swap.c` | `void swap_int(int *a, int *b);` | Échange les valeurs de deux entiers |
+| 2 | `2-strlen.c` | `int _strlen(char *s);` | Retourne la longueur d'une chaîne |
+| 3 | `3-puts.c` | `void _puts(char *str);` | Affiche une chaîne suivie d'un retour à la ligne |
+| 4 | `4-print_rev.c` | `void print_rev(char *s);` | Affiche une chaîne à l'envers, suivie d'un retour à la ligne |
+| 5 | `5-rev_string.c` | `void rev_string(char *s);` | Inverse une chaîne sur place |
+| 6 | `6-puts2.c` | `void puts2(char *str);` | Affiche un caractère sur deux, en commençant par le premier |
+| 7 | `7-puts_half.c` | `void puts_half(char *str);` | Affiche la seconde moitié d'une chaîne |
+| 8 | `8-print_array.c` | `void print_array(int *a, int n);` | Affiche `n` éléments d'un tableau d'entiers, séparés par `, ` |
+| 9 | `9-strcpy.c` | `char *_strcpy(char *dest, char *src);` | Copie une chaîne (avec le `\0`) dans `dest` et retourne `dest` |
+| - | `main.h` | - | Prototypes de toutes les fonctions et de `_putchar` |
+
+### Détails de comportement
+
+| Tâche | Comportement attendu |
+|---|---|
+| 3 | Utilise `_putchar` ; termine par `\n` |
+| 6 | `"0123456789"` donne `02468` |
+| 7 | `"0123456789"` donne `56789` ; si la longueur est impaire, on affiche les `n` derniers caractères avec `n = (longueur + 1) / 2` |
+| 8 | Format : `98, 402, -198, 298, -1024` puis `\n` |
+| 9 | Retourne le pointeur `dest` |
+
+---
+
+## Exemple de test
+
+Chaque tâche est testée avec un fichier `main.c` (non poussé sur le dépôt). Exemple pour la tâche 2 :
+
+```bash
+$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-strlen.c -o 2-strlen
+$ ./2-strlen
+16
+```
+
+---
+
+## Ressources
+
+- C - Arrays
+- C - Pointers
+- C - Strings
+- Memory Layout
+- `man strlen`, `man puts`, `man strcpy`
+
+---
+
+## Auteur
+
+Projet réalisé dans le cadre de la formation Holberton School.
 
 
-Requirements
-General
-    Allowed editors: vi, vim, emacs
-    All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
-    All your files should end with a new line
-    A README.md file, at the root of the folder of the project is mandatory
-    Your code should use the Betty style. It will be checked using betty-style.pl and betty-doc.pl
-    You are not allowed to use global variables
-    No more than 5 functions per file
-    You are not allowed to use the standard library. Any use of functions like printf, puts, etc… is forbidden
-    You are allowed to use _putchar
-    You don't have to push _putchar.c, we will use our file. If you do it won't be taken into account
-    In the following examples, the main.c files are shown as examples. You can use them to test your functions, but you don't have to push them to your repo (if you do we won't take them into account). We will use our own main.c files at compilation. Our main.c files might be different from the one shown in the examples
-    The prototypes of all your functions and the prototype of the function _putchar should be included in your header file called main.h
-    Don't forget to push your header file
 
 
-    # rev_string
+
+
+
+
+
+
+
+Task ?
+
 
 Projet C du dossier `pointers_arrays_strings` (repo `holbertonschool-low_level_programming`).
 

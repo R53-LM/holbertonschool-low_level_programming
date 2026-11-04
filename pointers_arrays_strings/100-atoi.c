@@ -24,10 +24,10 @@ int started = 0;
 		}
 		if (s[i] >= '0' && s[i] <= '9')
 		{
-			result = result * 10 + (s [i] - '0');
+			result = result * 10 + (s[i] - '0');
 			started = 1;
 		}
-		if (s[i] < '0' && s[i] > '9' && started == 1)
+		if ((s[i] < '0' || s[i] > '9') && started == 1)
 		{
 			break;
 		}

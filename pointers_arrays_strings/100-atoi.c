@@ -32,7 +32,7 @@ int started = 0;
 			break;
 		}
 	}
-	if (started == 1)
+	if (signe == 1)
 	{
 		return (-result);
 	}

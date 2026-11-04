@@ -1,11 +1,11 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _atoi - converts a string to an integer
- * @s: string to convert
- *
- * Return: the converted integer
- */
+* _atoi - converts a string to an integer
+* @s: string to convert
+*
+* Return: the converted integer
+*/
 int _atoi(char *s)
 {
 int signe = 1;
@@ -24,7 +24,7 @@ int started = 0;
 		}
 		if (s[i] >= '0' && s[i] <= '9')
 		{
-			result = result * 10 + (s[i] - '0');
+			result = result * 10 - (s[i] - '0');
 			started = 1;
 		}
 		if ((s[i] < '0' || s[i] > '9') && started == 1)
@@ -32,8 +32,10 @@ int started = 0;
 			break;
 		}
 	}
-
-	return (result * signe);
-
+	if (started == 1)
+	{
+		return (-result);
+	}
+	return (result);
 
 }

@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
-* _strcat - check the code
+ * _strncat - concatenates at most n characters from src to dest
 * @dest: The destination string to append to.
 * @src: The source string to append.
-* @n:
+ * @n: The maximum number of characters to append.
 *
 * Return: A pointer to the destination string.
 */
@@ -18,13 +18,13 @@ char *d = dest;
 	{
 		d++;
 	}
-	while (n)
+	while (n > 0 && *src)
 	{
 		*d = *src;
 		d++;
 		src++;
 		n--;
-
 	}
-	return(dest);
+	*d = '\0';
+	return (dest);
 }

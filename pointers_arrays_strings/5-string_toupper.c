@@ -14,8 +14,8 @@ int a = 0;
 	for (; str[a] != '\0'; a++)
 	{
 		if (str[a] >= 'a' && str[a] <= 'z')
-	    {
-	    	str[a] = str[a] - 32;
+		{
+			str[a] = str[a] - 32;
 		}
 	}
 	return (str);

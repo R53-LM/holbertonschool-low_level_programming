@@ -3,8 +3,8 @@
 
 /**
  * _strcmp - compares two strings.
- * @param s1: first string to compare
- * @param s2: second string to compare
+ * @s1: first string to compare
+ * @s2: second string to compare
  *
  * Return: difference between the first non-matching characters
  */

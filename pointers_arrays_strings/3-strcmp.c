@@ -2,34 +2,18 @@
 #include <stdio.h>
 
 /**
-* _strcmp -
-*
-* Return:
-*/
+ * _strcmp - compares two strings.
+ * @param s1: first string to compare
+ * @param s2: second string to compare
+ *
+ * Return: difference between the first non-matching characters
+ */
 int _strcmp(char *s1, char *s2)
 {
-	int i = 0;
-
-	int j = 0;
-
-	while (*s1 && *s2)
-
+	while (*s1 && (*s1 == *s2))
 	{
-		if (*s1 < *s2)
-		{
-			i++;
-		}
-		else if (*s1 > *s2)
-		{
-			j++;
-		}
-		else
-		{
-			i++;
-			j++;
-		}
-
+		s1++;
+		s2++;
 	}
-
-
+	return (*s1 - *s2);
 }

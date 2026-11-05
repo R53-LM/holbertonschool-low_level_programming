@@ -10,7 +10,7 @@
 char *cap_string(char *str)
 {
 int a = 0;
-char b =
+
 
 	for (; str[a] != '\0'; a++)
 	{

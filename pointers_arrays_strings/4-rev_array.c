@@ -22,7 +22,7 @@ int temp;
 		temp = a[debut];
 	    a[debut] = a[fin];
 		a[fin] = temp;
-		debut ++;
+		debut++;
 		fin--;
 	}
 }

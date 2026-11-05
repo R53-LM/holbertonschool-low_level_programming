@@ -18,7 +18,7 @@ char *d = dest;
 	{
 		d++;
 	}
-	while (n > 0 && *src)
+	while (n)
 	{
 		*d = *src;
 		d++;

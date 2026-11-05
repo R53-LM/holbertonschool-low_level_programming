@@ -3,10 +3,10 @@
 
 /**
 * _strcat - check the code
-* @dest:
-* @src:
+* @dest: The destination string to append to.
+* @src: The source string to append.
 *
-* Return: Always 0.
+* Return: A pointer to the destination string.
 */
 char *_strcat(char *dest, char *src)
 {

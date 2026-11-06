@@ -2,11 +2,9 @@
 #include <stdio.h>
 
 /**
-* main - check the code for
-*@a:
-*
-* Return: Always 0.
-*/
+ * print_chessboard - prints an 8x8 chessboard.
+ * @a: the chessboard to print.
+ */
 void print_chessboard(char (*a)[8])
 {
 int row;

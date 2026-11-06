@@ -2,12 +2,12 @@
 #include <stdio.h>
 
 /**
-* _strspn -
-* @s:
-* @accept:
-*
-* Return:
-*/
+ * _strspn - gets the length of a prefix of a string made of accepted chars.
+ * @s: string to be scanned
+ * @accept: string containing the accepted characters
+ *
+ * Return: the number of bytes in the initial segment of s that are in accept
+ */
 unsigned int _strspn(char *s, char *accept)
 {
 	int i;

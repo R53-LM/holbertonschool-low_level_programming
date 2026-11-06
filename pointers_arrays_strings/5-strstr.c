@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
- * _strpbrk - 
- * @s: 
- * @accept: 
+ * _strpbrk - searches a string for any character from a set
+ * @s: the string to search
+ * @accept: the set of characters to search for
  *
- * Return:
+ * Return: a pointer to the first matching character, or NULL if none is found
  */
 char *_strpbrk(char *s, char *accept)
 {
@@ -17,11 +17,11 @@ char *_strpbrk(char *s, char *accept)
 	for (i = 0; s[i] != '\0'; i++)
 	{
 
-		for (j = 0; accept[j] != '\0'; j++)
+		for (j = 0; accept[j] != '\0' && s[i + j] == accept[j]; j++)
 		{
-			if (s[i] == accept[j])
+			if (accept[j] == '\0')
 			{
-				return (s + i);
+				return (&s[i]);
 			}
 		}
 	}

@@ -11,14 +11,10 @@
 */
 char *str_concat(char *s1, char *s2)
 {
-
-int i;
-
-int k;
-
-int y;
-
-char *s;
+	int i;
+	int k;
+	int y;
+	char *s;
 
 	if (s1 == NULL)
 	{
@@ -28,7 +24,7 @@ char *s;
 	{
 		s2 = "";
 	}
-    
+
 	for (i = 0; s1[i] != 0; i++)
 	{
 	}
@@ -44,10 +40,10 @@ char *s;
 	}
 
 	for (k = 0; k < i; k++)
-    {
+	{
 		s[k] = s1[k];
-    }
-    for (k = 0; k < y; k++)
+	}
+	for (k = 0; k < y; k++)
 	{
 		s[i + k] = s2[k];
 	}

@@ -24,13 +24,13 @@ char *b = s2;
 
 char *s;
 
-	if (s1 == 0)
+	if (s1 == NULL)
 	{
-		return (0);
+		s1 = "";
 	}
-	if (s2 == 0)
+	if (s2 == NULL)
 	{
-		return (0);
+		s2 = "";
 	}
 	for (i = 0; a[i] != 0; i++)
 	{
@@ -47,11 +47,14 @@ char *s;
 	}
 
 	for (k = 0; k < i; k++)
-	{
+    {
 		s[k] = a[k];
-		s[k] = b[k];
+    }
+    for (k = 0; k < y; k++)
+	{
+		s[i + k] = b[k];
 	}
 
-	s[k] = '\0';
+	s[i + y] = '\0';
 	return (s);
 }

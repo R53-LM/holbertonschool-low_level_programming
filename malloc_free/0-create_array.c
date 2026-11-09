@@ -23,9 +23,9 @@ char *p = c;
 	{
 		return (1);
 	}
-	if (s == NULL)
+	if (s == 0)
 	{
-		return (1);
+		return (NULL);
 	}
 
 	free(p);

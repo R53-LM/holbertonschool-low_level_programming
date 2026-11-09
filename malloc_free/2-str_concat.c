@@ -3,11 +3,11 @@
 #include <stdlib.h>
 
 /**
-*str_concat -
-* @s:
-* @s: 
+*str_concat - adds two strings together.
+* @s1: first string to compare.
+* @s2: second string to compare.
 *
-* Return:
+* Return: pointer to the copy string, or NULL on failure
 */
 char *str_concat(char *s1, char *s2)
 {

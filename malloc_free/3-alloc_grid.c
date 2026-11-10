@@ -17,11 +17,7 @@ int y;
 
 int **s;
 
-	if (width <= 0)
-	{
-		return (NULL);
-	}
-	if (height <= 0)
+	if (width <= 0 || height <= 0)
 	{
 		return (NULL);
 	}
@@ -49,7 +45,5 @@ int **s;
 			s[i][j] = 0;
 		}
 	}
-
 	return (s);
-
 }

@@ -36,11 +36,11 @@ int **s;
 	{
 		s[i] = malloc(width * sizeof(int));
 		if (s[i] == NULL)
-	    {
+		{
 			for (y = 0; y < i; y++)
-            {
-                free(s[y]);
-            }
+			{
+				free(s[y]);
+			}
 			free(s);
 			return (NULL);
 		}

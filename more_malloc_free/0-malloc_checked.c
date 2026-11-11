@@ -11,9 +11,10 @@
 void *malloc_checked(unsigned int b)
 {
 
+
 int *s;
 
-	if (b == NULL)
+	if (b == 0)
 	{
 		return (NULL);
 	}
@@ -24,5 +25,5 @@ int *s;
 	{
 		exit(98);
 	}
-	return (0);
+	return (s);
 }

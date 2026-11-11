@@ -10,16 +10,9 @@
  */
 void *malloc_checked(unsigned int b)
 {
+	void *s;
 
-
-int *s;
-
-	if (b == 0)
-	{
-		return (NULL);
-	}
-
-	s = malloc(b * sizeof(unsigned int));
+	s = malloc(b);
 
 	if (s == NULL)
 	{

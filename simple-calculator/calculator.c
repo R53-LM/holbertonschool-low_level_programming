@@ -9,35 +9,34 @@
 *
 *
 */
-void main(void)
+int main(void)
 {
 
 int navi;
 
 
 /*menu - dérouler*/
-	printf("Welcome in the calculator\n");
+	printf("Simple Calculator\n");
 
 	printf("1) Add\n");
-	scanf("%d", &navi);
 
 	printf("2) Subtract\n");
-	scanf("%d", &navi);
 
 	printf("3) Multiply\n");
-	scanf("%d", &navi);
 
 	printf("4) Divide\n");
-	scanf("%d", &navi);
 
 	printf("0) Quit\n");
+
 	scanf("%d", &navi);
 
 	printf("Choice: %d\n", navi);
+
 
 	if (navi == 0)
 	{
 		printf("Bye!\n");
 	}
+return (0);
 }
 

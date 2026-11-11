@@ -14,6 +14,10 @@ int main(void)
 
 int navi;
 
+int A;
+int B;
+int Result;
+
 	do 
     {
 		/* menu - dérouler */
@@ -35,14 +39,9 @@ int navi;
 		}
         switch (navi) {
             case 1: /*addition*/
-            	int A;
 
-	            int B;
-
-                int Result;
 	            printf("A: ");
 	            scanf("%d", &A);
-                printf("\n");
 	            printf("B: ");
 	            scanf("%d", &B);
                 printf("\n");
@@ -55,7 +54,6 @@ int navi;
 
 	            printf("A: ");
 	            scanf("%d", &A);
-                printf("\n");
 	            printf("B: ");
 	            scanf("%d", &B);
                 printf("\n");
@@ -64,32 +62,31 @@ int navi;
                 printf("Result: %d\n", Result);
                 break;
 
-            case 3:/*soustraction*/
+            case 3:/*multiplicationn*/
 
 	            printf("A: ");
 	            scanf("%d", &A);
-                printf("\n");
 	            printf("B: ");
 	            scanf("%d", &B);
                 printf("\n");
 
-                Result = A - B;
+                Result = A * B;
                 printf("Result: %d\n", Result);
                 break;
 
-            case 4:/*soustraction*/
+            case 4:/*division*/
 
 	            printf("A: ");
 	            scanf("%d", &A);
-                printf("\n");
 	            printf("B: ");
 	            scanf("%d", &B);
                 printf("\n");
 
-                Result = A - B;
+                Result = A / B;
                 printf("Result: %d\n", Result);
                 break;
         }
+    /*sortir du menu + fin de l'execution.*/
     } while (navi != 0);
 
 	printf("Bye!\n");

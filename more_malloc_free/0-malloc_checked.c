@@ -3,11 +3,11 @@
 #include <stdlib.h>
 
 /**
-* malloc_checked -
-* @b:
-*
-* Return: Nothing.
-*/
+ * malloc_checked - allocates memory using malloc
+ * @b: number of bytes to allocate
+ *
+ * Return: pointer to the allocated memory, or exits with status 98 on failure
+ */
 void *malloc_checked(unsigned int b)
 {
 
@@ -24,5 +24,5 @@ int *s;
 	{
 		exit(98);
 	}
-
+	return (0);
 }

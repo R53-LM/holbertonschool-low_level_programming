@@ -82,8 +82,16 @@ int Result;
 	            scanf("%d", &B);
                 printf("\n");
 
+
+                if (B == 0)
+                {
+                    printf("Error: division by zero\n");
+                }
+                else
+                {
                 Result = A / B;
                 printf("Result: %d\n", Result);
+                }
                 break;
         }
     /*sortir du menu + fin de l'execution.*/

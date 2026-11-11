@@ -39,7 +39,5 @@ int navi;
 	{
 		printf("Bye!\n");
 	}
-
-
-
+}
 

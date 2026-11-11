@@ -28,6 +28,7 @@ int Result;
 		printf("4) Divide\n");
 		printf("0) Quit\n");
 
+        /*Choix du menu*/
 		printf("Choice: ");
 		scanf("%d", &navi);
 

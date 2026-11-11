@@ -14,29 +14,84 @@ int main(void)
 
 int navi;
 
+	do 
+    {
+		/* menu - dérouler */
+		printf("Simple Calculator\n");
+		printf("1) Add\n");
+		printf("2) Subtract\n");
+		printf("3) Multiply\n");
+		printf("4) Divide\n");
+		printf("0) Quit\n");
 
-/*menu - dérouler*/
-	printf("Simple Calculator\n");
+		printf("Choice: ");
+		scanf("%d", &navi);
 
-	printf("1) Add\n");
+		/* choix hors du menu. */
+		if (navi < 0 || navi > 4)
+		{
+			printf("Invalid choice\n");
+			printf("\n");
+		}
+        switch (navi) {
+            case 1: /*addition*/
+            	int A;
 
-	printf("2) Subtract\n");
+	            int B;
 
-	printf("3) Multiply\n");
+                int Result;
+	            printf("A: ");
+	            scanf("%d", &A);
+                printf("\n");
+	            printf("B: ");
+	            scanf("%d", &B);
+                printf("\n");
 
-	printf("4) Divide\n");
+                Result = A + B;
+                printf("Result: %d\n", Result);
+                break;
 
-	printf("0) Quit\n");
+            case 2:/*soustraction*/
 
-	scanf("%d", &navi);
+	            printf("A: ");
+	            scanf("%d", &A);
+                printf("\n");
+	            printf("B: ");
+	            scanf("%d", &B);
+                printf("\n");
 
-	printf("Choice: %d\n", navi);
+                Result = A - B;
+                printf("Result: %d\n", Result);
+                break;
 
+            case 3:/*soustraction*/
 
-	if (navi == 0)
-	{
-		printf("Bye!\n");
-	}
-return (0);
+	            printf("A: ");
+	            scanf("%d", &A);
+                printf("\n");
+	            printf("B: ");
+	            scanf("%d", &B);
+                printf("\n");
+
+                Result = A - B;
+                printf("Result: %d\n", Result);
+                break;
+
+            case 4:/*soustraction*/
+
+	            printf("A: ");
+	            scanf("%d", &A);
+                printf("\n");
+	            printf("B: ");
+	            scanf("%d", &B);
+                printf("\n");
+
+                Result = A - B;
+                printf("Result: %d\n", Result);
+                break;
+        }
+    } while (navi != 0);
+
+	printf("Bye!\n");
+	return (0);
 }
-

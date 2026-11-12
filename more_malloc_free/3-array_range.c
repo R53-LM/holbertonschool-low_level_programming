@@ -9,7 +9,7 @@
 *
 * Return: 
 */
-int *array_rang(int min, int max)
+int *array_range(int min, int max)
 {
 int *s;
 int count;

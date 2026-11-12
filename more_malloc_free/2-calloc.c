@@ -28,7 +28,7 @@ unsigned int n;
 		return (NULL);
 
 	for (n = 0; n != size; n++)
-		s[n] = s[size];
+		s[n] = s[nmemb];
 
 	return (s);
 }

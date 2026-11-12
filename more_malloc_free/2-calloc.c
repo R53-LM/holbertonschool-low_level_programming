@@ -27,8 +27,8 @@ unsigned int n;
 	if (s == NULL)
 		return (NULL);
 
-	for (n = 0; n != size; n++)
-		s[n] = s[nmemb];
+	for (n = 0; n < cal; n++)
+		s[n] = s[n];
 
 	return (s);
 }

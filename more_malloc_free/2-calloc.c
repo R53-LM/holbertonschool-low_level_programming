@@ -3,24 +3,35 @@
 #include <stdlib.h>
 
 /**
-* _calloc -
-* @nmemb:
-* @size:
+* _calloc - allocates memory for an array and initializes it to zero.
+* @nmemb: number of elements.
+* @size: size of each element.
 *
-* Return:
+* Return: pointer to allocated memory, or NULL on failure.
 */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
+char *s;
 
-void *s;
+unsigned int cal;
+
+char *m;
+
+unsigned int n;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	s = calloc(nmemb, sizeof(unsigned int));
+	cal = nmemb * size;
+
+	s = malloc(nmemb * sizeof(unsigned int));
 
 	if (s == NULL)
 		return (NULL);
 
-	return (s);
+	while (cal == 0)
+		return (s);
+
+	for (n = 0; m[n] != '\0'; n++)
+
 }

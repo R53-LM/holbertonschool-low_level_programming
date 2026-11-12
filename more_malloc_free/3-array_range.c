@@ -23,6 +23,6 @@ int n = 0;
         return (NULL);
 
     for (; n < count; n++)
-        s[n] = n;
+        s[n] = min + n;
     return (s);
 }

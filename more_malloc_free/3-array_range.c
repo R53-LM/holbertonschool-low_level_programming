@@ -5,9 +5,24 @@
 /**
 * array_range - 
 * @min: 
-* @max: 
+* @max:
 *
 * Return: 
 */
-int *array_range(int min, int max)
+int *array_rang(int min, int max)
 {
+int *s;
+int count;
+int n = 0;
+
+    if (min > max)
+        return (NULL);
+    count = max - min + 1;
+    s = malloc(count * sizeof(int));
+    if (s == NULL)
+        return (NULL);
+
+    for (; n < count; n++)
+        s[n] = n;
+    return (s);
+}

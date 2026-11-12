@@ -3,11 +3,11 @@
 #include <stdlib.h>
 
 /**
-* array_range - 
-* @min: 
-* @max:
+* array_range - creates an array of integers from min to max
+* @min: minimum value of the array
+* @max: maximum value of the array
 *
-* Return: 
+* Return: pointer to the newly created array, or NULL if min is greater than max or malloc fails
 */
 int *array_range(int min, int max)
 {

@@ -15,8 +15,6 @@ char *s;
 
 unsigned int cal;
 
-char *m;
-
 unsigned int n;
 
 	if (nmemb == 0 || size == 0)
@@ -24,14 +22,13 @@ unsigned int n;
 
 	cal = nmemb * size;
 
-	s = malloc(nmemb * sizeof(unsigned int));
+	s = malloc(cal);
 
 	if (s == NULL)
 		return (NULL);
 
-	while (cal == 0)
-		return (s);
+	for (n = 0; s[n] != s[nmemb]; n++)
+		s[n] = cal;
 
-	for (n = 0; m[n] != '\0'; n++)
-
+	return (s);
 }

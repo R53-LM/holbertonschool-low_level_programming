@@ -15,14 +15,19 @@ int *s;
 int count;
 int n = 0;
 
-    if (min > max)
-        return (NULL);
-    count = max - min + 1;
-    s = malloc(count * sizeof(int));
-    if (s == NULL)
-        return (NULL);
-
-    for (; n < count; n++)
-        s[n] = min + n;
-    return (s);
+	if (min > max)
+	{
+		return (NULL);
+	}
+	count = max - min + 1;
+	s = malloc(count * sizeof(int));
+	if (s == NULL)
+	{
+		return (NULL);
+	}
+	for (; n < count; n++)
+	{
+		s[n] = min + n;
+	}
+	return (s);
 }

@@ -28,7 +28,7 @@ unsigned int n;
 		return (NULL);
 
 	for (n = 0; n < cal; n++)
-		s[n] = s[n];
+		s[n] = 0;
 
 	return (s);
 }

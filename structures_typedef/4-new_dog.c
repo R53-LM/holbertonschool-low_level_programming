@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include "dog.h"
 /**
- * new_dog- Structure représentant un chien
+ * new_dog- Structure représentant un nouveau chien
  * @name:Nom du chien
  * @age:Age du chien
  * @owner:Nom du propriétaire
@@ -17,7 +17,7 @@ int j;
 	if (s == NULL)
 		return (NULL);
 	for (i = 0; name[i] != '\0'; i++)
-	for (j = 0; owner[j] != '\0'; j++);
+	for (j = 0; owner[j] != '\0'; j++)
 	r = malloc(sizeof(char) * (i + 1));
 	if (r == NULL)
 	{

@@ -16,19 +16,19 @@ int j;
 	s = malloc(sizeof(dog_t));
 	if (s == NULL)
 		return (NULL);
-	for (i = 0; name[i] != '\0'; i++);
+	for (i = 0; name[i] != '\0'; i++)
 	for (j = 0; owner[j] != '\0'; j++);
 	r = malloc(sizeof(char) * (i + 1));
 	if (r == NULL)
 	{
-		free (s);
+		free(s);
 		return (NULL);
 	}
 	v = malloc(sizeof(char) * (j + 1));
 	if (v == NULL)
 	{
-		free (r);
-		free (s);
+		free(r);
+		free(s);
 		return (NULL);
 	}
 	for (i = 0; name[i] != '\0'; i++)

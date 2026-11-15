@@ -5,6 +5,7 @@
  * @name:Nom du chien
  * @age:Age du chien
  * @owner:Nom du propriétaire
+ * Return: s is a function that creates a new dog.
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {

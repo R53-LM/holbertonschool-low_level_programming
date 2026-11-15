@@ -1,8 +1,8 @@
-#include <stdio.h>
+#include <stdlib.h>
 #include "dog.h"
 /**
- * free_dog- Structure représentant un chien
- * @d:pointeur
+ * free_dog- Structure représentant un chien.
+ * @d:pointeur afin de libérer l'espace mémoire alloué.
  */
 void free_dog(dog_t *d)
 {

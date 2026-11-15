@@ -16,8 +16,10 @@ int j;
 	s = malloc(sizeof(dog_t));
 	if (s == NULL)
 		return (NULL);
-	for (i = 0; name[i] != '\0'; i++);
-	for (j = 0; owner[j] != '\0'; j++);
+	for (i = 0; name[i] != '\0'; i++)
+	;
+	for (j = 0; owner[j] != '\0'; j++)
+	;
 	r = malloc(sizeof(char) * (i + 1));
 	if (r == NULL)
 	{

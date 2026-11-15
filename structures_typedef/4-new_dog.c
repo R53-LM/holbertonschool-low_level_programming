@@ -13,7 +13,6 @@ char *r;
 char *v;
 int i;
 int j;
-
 	s = malloc(sizeof(dog_t));
 	if (s == NULL)
 		return (NULL);
@@ -38,10 +37,8 @@ int j;
 	for (j = 0; owner[j] != '\0'; j++)
 		v[j] = owner[j];
 	v[j] = '\0';
-
 	s->name = r;
 	s->age = age;
 	s->owner = v;
-
 	return (s);
 }

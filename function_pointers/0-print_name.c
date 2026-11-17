@@ -3,8 +3,8 @@
 
 /**
  * print_name - Print a name
- * @name:
- * f -
+ * @name: is (bob) in main.c
+ * f - is fonction of print_name_as_is
  * 
  */
 void print_name(char *name, void (*f)(char *))

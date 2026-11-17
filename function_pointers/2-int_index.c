@@ -6,7 +6,7 @@
  * @array: pointer of tab
  * @size: size of the array
  * @cmp: is a pointer to the function
- * Return - If no element matches, return -1
+ * Return: If no element matches, return -1
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {

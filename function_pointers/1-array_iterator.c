@@ -2,7 +2,8 @@
 #include "function_pointers.h"
 
 /**
- * array_iterator - function that executes a function given as a parameter on each element of an array.
+ * array_iterator - function that executes a function given as a parameter
+ * on each element of an array.
  * @array: pointer of tab
  * @size: size of the array
  * @action: is a pointer to the function

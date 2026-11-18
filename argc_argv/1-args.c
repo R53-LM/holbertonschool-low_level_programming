@@ -2,15 +2,13 @@
 
 /**
  * main - print the number of arguments
- * @argc: print the number
+ * @argc: the number of arguments
  * @argv: not uses
  * Return: 0 (success)
  */
 int main(int argc, char *argv[])
 {
 	(void)argv;
-	if (argc == 1)
-		return (0);
-	printf("%d\n", argc);
+	printf("%d\n", (argc - 1));
 	return (0);
 }

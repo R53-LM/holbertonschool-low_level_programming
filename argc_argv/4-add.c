@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - print each argument
+ * main - display each argument and add them together
  * @argc: the number of elements in argv
  * @argv: an array of pointers to character strings, terminated by NULL.
  * Return: 0 (success)
@@ -16,7 +16,6 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
-
 	for (i = 1; i < argc; i++)
 	{
 		for (j = 0; argv[j] < argv[i]; j++)

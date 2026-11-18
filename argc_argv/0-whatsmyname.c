@@ -1,19 +1,15 @@
 #include <stdio.h>
 
 /**
+ * main - print the name 
+ * @argc: not uses 
+ * @argv: it is a tab of pointer with the charactres
  * 
- * 
+ * Return: 0 (success)
  */
 int main(int argc, char *argv[])
 {
-	int i;
-
-	if (argc != 2)
-		return (1);
-
-	for (i = 0; i < argc; i++)
-		argv[i] = mynameis
-
-	printf("%s\n", argv[i]);
+	(void)argc;
+	printf("%s\n", argv[0]);
 	return (0);
 }

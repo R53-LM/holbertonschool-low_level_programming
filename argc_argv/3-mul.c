@@ -9,12 +9,13 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, result = 0;
+	int i, a, b;
 	(void)argv;
 	for (i = 1; i < argc; i++)
 	{
-		result *= atoi(argv[i]);
-		printf("%d\n", result);
+		a = atoi(argv[1]);
+		b = atoi(argv[2]);
+		printf("%d\n", a * b);
 	}
-	return (result);
+	return (0);
 }

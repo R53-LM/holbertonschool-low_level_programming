@@ -9,19 +9,26 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, result;
+	int i, j, result = 0;
 
 	if (argc == 1)
-		printf("0\n");
-
-	if (argv[])
 	{
-		printf("Erreur\n");
-		return (1);
+		printf("0\n");
+		return (0);
 	}
 
-	result = atoi(argv[i]);
-
+	for (i = 1; i < argc; i++)
+	{
+		for (j = 0; argv[j] < argv[i]; j++)
+		{
+			if (argv[i][j] != 0)
+			{
+				printf("Error\n");
+				return (1);
+			}
+		}
+			result += atoi(argv[i]);
+	}
 	printf("%d\n", result);
 	return (0);
 }

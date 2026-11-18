@@ -10,9 +10,10 @@
 int main(int argc, char *argv[])
 {
 	int a, b;
+
 	if (argc != 3)
 	{
-		printf ("Error\n");
+		printf("Error\n");
 		return (1);
 	}
 	a = atoi(argv[1]);

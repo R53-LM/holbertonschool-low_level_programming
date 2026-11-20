@@ -1,10 +1,10 @@
 #include "3-calc.h"
 
 /**
- * op_add - fonction d'addition
- * @a: première valeur
- * @b: deuxième valeur
- * Return: la somme de l'opération
+ * op_add - Adds two integers
+ * @a: First number
+ * @b: Second number
+ * Return: The sum of a and b
  */
 int op_add(int a, int b)
 {
@@ -12,10 +12,10 @@ int op_add(int a, int b)
 }
 
 /**
- * op_sub - fonction de soustraction
- * @a: première valeur
- * @b: deuxième valeur
- * Return: la différence de l'opération
+ * op_sub - Subtracts two integers
+ * @a: First number
+ * @b: Second number
+ * Return: The difference between a and b
  */
 int op_sub(int a, int b)
 {
@@ -23,10 +23,10 @@ int op_sub(int a, int b)
 }
 
 /**
- * op_mul - fonction de multiplication
- * @a: première valeur
- * @b: deuxième valeur
- * Return: le produit de l'opération
+ * op_mul - Multiplies two integers
+ * @a: First number
+ * @b: Second number
+ * Return: The product of a and b
  */
 int op_mul(int a, int b)
 {
@@ -34,10 +34,10 @@ int op_mul(int a, int b)
 }
 
 /**
- * op_div - fonction de division
- * @a: première valeur
- * @b: deuxième valeur
- * Return: le quotient de l'opération
+ * op_div - Divides two integers
+ * @a: First number
+ * @b: Second number
+ * Return: The result of the division
  */
 int op_div(int a, int b)
 {
@@ -45,10 +45,10 @@ int op_div(int a, int b)
 }
 
 /**
- * op_mod - fonction de modulo
- * @a: première valeur
- * @b: deuxième valeur
- * Return: le reste de l'opération
+ * op_mod - Calculates the remainder of a division
+ * @a: First number
+ * @b: Second number
+ * Return: The remainder of a divided by b
  */
 int op_mod(int a, int b)
 {

@@ -1,10 +1,11 @@
 #include "3-calc.h"
 
 /**
- * main - Afficher le résultat
- * @argc: nombre d'élément de argv
- * @argv: tableau de pointeur pour calculer
- * Return: Le résultat
+ * main - Entry point of the calculator
+ * @argc: Number of arguments
+ * @argv: Array of arguments
+ *
+ * Return: 0 on success, error code on failure
  */
 int main(int argc, char *argv[])
 {

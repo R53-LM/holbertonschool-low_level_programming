@@ -55,28 +55,33 @@ void print_str(va_list ap, char *sep)
  */
 void print_all(const char * const format, ...)
 {
-
 	va_list ap;
 	int i = 0;
 	int j;
-	char *sep = ", ";
+	char *sep = "";
 
-	va_start(ap, format)
+	type_tout tout[] = {
+		{'c', print_char},
+		{'i', print_int},
+		{'f', print_float},
+		{'s', print_str},
+		{0, NULL}
+	};
 
-	{'c', print_char};
-	{'i', print_int};
-	{'f', print_float};
-	{'s', print_str};
+	va_start(ap, format);
 
-	while (format[i] && format)	/*raccourcis pour avancer dans format*/
+	while (format[i])	/*raccourcis pour avancer dans format*/
 	{
 		j = 0;
-		while (f[j]type)
-
-		if (ap, sep)
+		while (tout[j] !=  && j != format[j])
+			j++;
+		if (j == format[j] || j == tout[j])
+		{
+			tout[j].type_tout(j, sep);
+			sep = ", ";
+		}
+		i++;
 	}
-
-
 
 	va_end(ap);
 	printf("\n");

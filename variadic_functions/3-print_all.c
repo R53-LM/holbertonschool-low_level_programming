@@ -71,7 +71,7 @@ void print_all(const char * const format, ...)
 
 	va_start(ap, format);
 
-	while (format[i])	/*raccourcis pour avancer dans format*/
+	while (format && format[i])	/*raccourcis pour avancer dans format*/
 	{
 		j = 0;
 		while (tout[j].type != 0 && tout[j].type != format[i])

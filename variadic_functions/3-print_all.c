@@ -2,7 +2,6 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
 
-
 /**
  * print_int - Prints an integer argument
  * @ap: List of arguments

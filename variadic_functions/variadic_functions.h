@@ -9,8 +9,6 @@ int _putchar(char c);
 void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
 
-
-
 typedef struct group_t
 {
 	char type;
@@ -24,6 +22,5 @@ void print_float(va_list ap, char *sep);
 void print_str(va_list ap, char *sep);
 
 void print_all(const char * const format, ...);
-
 
 #endif

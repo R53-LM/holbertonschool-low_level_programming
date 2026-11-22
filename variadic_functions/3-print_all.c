@@ -37,6 +37,7 @@ void print_float(va_list ap, char *sep)
 void print_str(va_list ap, char *sep)
 {
 	char *s = 0;
+
 	s = va_arg(ap, char *);
 	if (s == NULL)
 	{
@@ -45,7 +46,6 @@ void print_str(va_list ap, char *sep)
 	}
 	printf("%s%s", sep, s);
 }
-
 
 /**
  * print_all - Prints anything according to its format

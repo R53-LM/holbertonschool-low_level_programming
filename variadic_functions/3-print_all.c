@@ -4,36 +4,36 @@
 
 
 /**
- * print_int - 
- * @va_list:
- * @sep:
+ * print_int - Prints an integer argument
+ * @ap: List of arguments
+ * @sep: Separator to print before the argument
  */
 void print_int(va_list ap, char *sep)
 {
 	printf("%s%d", sep, va_arg(ap, int));
 }
 /**
- * print_char - 
- * @va_list:
- * @sep:
+ * print_char - Prints a character argument
+ * @ap: List of arguments
+ * @sep: Separator to print before the argument
  */
 void print_char(va_list ap, char *sep)
 {
 	printf("%s%c", sep, va_arg(ap, int));
 }
 /**
- * print_float - 
- * @va_list:
- * @sep:
+ * print_float - Prints a float argument
+ * @ap: List of arguments
+ * @sep: Separator to print before the argument
  */
 void print_float(va_list ap, char *sep)
 {
 	printf("%s%f", sep, va_arg(ap, double));
 }
 /**
- * print_str - 
- * @va_list:
- * @sep:
+ * print_str - Prints a string argument
+ * @ap: List of arguments
+ * @sep: Separator to print before the argument
  */
 void print_str(va_list ap, char *sep)
 {
@@ -49,9 +49,11 @@ void print_str(va_list ap, char *sep)
 
 
 /**
- * print_all - 
- * @format: 
+ * print_all - Prints anything according to its format
+ * @format: String containing the types of arguments to print
  *
+ * Description: Selects the appropriate function for each format
+ * character and prints the corresponding argument.
  */
 void print_all(const char * const format, ...)
 {
@@ -73,16 +75,15 @@ void print_all(const char * const format, ...)
 	while (format[i])	/*raccourcis pour avancer dans format*/
 	{
 		j = 0;
-		while (tout[j] !=  && j != format[j])
+		while (tout[j].type != 0 && tout[j].type != format[i])
 			j++;
-		if (j == format[j] || j == tout[j])
+		if (tout[j].type != 0)
 		{
-			tout[j].type_tout(j, sep);
+			tout[j].tp(ap, sep);
 			sep = ", ";
 		}
 		i++;
 	}
-
 	va_end(ap);
 	printf("\n");
 }

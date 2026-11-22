@@ -11,7 +11,7 @@ void print_strings(const char *separator, const unsigned int n, ...);
 
 
 
-typedef stuct group_t
+typedef struct group_t
 {
 	char type;
 	void(*tp)(va_list, char*);

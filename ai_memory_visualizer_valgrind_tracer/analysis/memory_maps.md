@@ -14,13 +14,13 @@
 ...
 
 ## 3. aliasing_example
-	A la compilation, nous retrouvons un used-after-free, car il libère 'a' avant l'utilisation de 'b', il aurait du faire ça avant le 'return 0;'. Donc, problème de compilateur.
-	Dans la Pile de make_numbers, (n, i, arr) 'arr' est entré dans la fonction et return
+	
+	Dans la Pile de make_numbers, (n, i, arr) et tout meurt au return. 'arr' est entré dans la fonction et return
 	Dans la Pile de main, (a, b, n,). débute dans main et fini dans main.
+	Alias: 'arr' → copié dans 'a' → copié dans 'b'. Après 'b = a', deux variables contiennent la même adresse.
 	Pas de mémorie leak car le bloc a bien été libéré, même si on l'utilise ensuite.
+	A la compilation, nous retrouvons un used-after-free, car il libère 'a' avant l'utilisation de 'b', il aurait du faire ça avant le 'return 0;'. Donc, problème de compilateur.
 ## 4. crash_example
 ...
 
 ## Cas où l'IA s'est trompée
-
-il a écrit qu'il n'y avait aucun malloc et rien sur le heap dans stack_example et crash_example

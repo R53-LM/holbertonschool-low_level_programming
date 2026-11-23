@@ -18,7 +18,7 @@ static int *make_numbers(int n)
 
     return arr;
 }
-
+/*allocation mémoire avec malloc*/
 int main(void)
 {
     int *a = NULL;
@@ -46,3 +46,4 @@ int main(void)
 
     return 0;
 }
+/*il libère a */

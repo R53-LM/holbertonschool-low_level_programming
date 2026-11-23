@@ -1,7 +1,7 @@
 # Memory maps
 
 ## 1. stack_example
-(étapes numérotées avec pile / tas / alias / durées de vie)
+
 	Pas d'allocation mémoire
 	main n'a pas de local et walk_stack avec depth (0 à 3).
 	Chacun à ses propres 'depth', 'max_depth' et 'marker'.

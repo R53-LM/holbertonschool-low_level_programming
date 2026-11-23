@@ -24,3 +24,5 @@
 ...
 
 ## Cas où l'IA s'est trompée
+« Après free(a), b vaut NULL, donc la lecture b[2] provoque un Segmentation fault (core dumped) à la ligne 42. »
+free(a) ne modifie ni a ni b. b garde l'ancienne adresse, ce que montre b=0x555c9d0292b0 (dangling).

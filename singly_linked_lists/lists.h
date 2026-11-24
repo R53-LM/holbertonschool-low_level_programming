@@ -5,12 +5,12 @@
 #include <stdlib.h>
 #include <string.h>
 
-typedef struct list 
+typedef struct list
 {
 	char *str;
 	unsigned int len;
-	struct list *next; 
-}list_t;
+	struct list *next;
+} list_t;
 
 size_t print_list(const list_t *h);
 

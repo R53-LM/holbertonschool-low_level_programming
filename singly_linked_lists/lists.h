@@ -5,6 +5,12 @@
 #include <stdlib.h>
 #include <string.h>
 
+/**
+ * struct list - is a stock for used node
+ * @str: it's a pointer of string
+ * @len: it's lenght of string
+ * @next: is a pointer of next node
+ */
 typedef struct list
 {
 	char *str;
